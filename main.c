@@ -2,7 +2,6 @@
 
 void delay_s(uint32_t ms){
     // Assuming 72MHz system clock
-    ms *= 12000;  // Rough approximation, may need adjustment
     while(ms--) {
         __NOP();
     }
